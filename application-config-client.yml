@@ -1,11 +1,10 @@
-
 spring:
   profiles:
     active: dev
     
 ---
 spring:
-  profile: dev
+  profiles: dev
   application:
     name: spring-cloud-config-client-dev
 server:
@@ -20,7 +19,7 @@ eureka:
     
 ---
 spring:
-  profile: test
+  profiles: test
   application:
     name: spring-cloud-config-client-test
 server:

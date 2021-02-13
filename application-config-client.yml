@@ -1,0 +1,38 @@
+
+spring:
+  profiles:
+    active: dev
+    
+---
+server:
+  port: 8201
+
+spring:
+  profile: dev
+  application:
+    name: spring-cloud-config-client-dev
+    
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/
+  instance:
+    instance-id: spring-cloud-config-client-8201  # 指定服务的id
+    prefer-ip-address: true # 使用ip地址注册
+    
+---
+server:
+  port: 8202
+
+spring:
+  profile: test
+  application:
+    name: spring-cloud-config-client-test
+ 
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7002.com:7002/eureka/
+  instance:
+    instance-id: spring-cloud-config-client-8202  # 指定服务的id
+    prefer-ip-address: true # 使用ip地址注册

@@ -4,11 +4,11 @@ spring:
 
 ---
 spring:
-  profiles: dev #
+  profiles: dev # 开发环境
   application:
     name: spring-cloud-demo-config-dev
 ---
 spring:
-  profiles: test #
+  profiles: test # 测试环境
   application:
     name: spring-cloud-demo-config-test

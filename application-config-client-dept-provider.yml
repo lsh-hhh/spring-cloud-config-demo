@@ -11,7 +11,7 @@ spring:
   datasource:
     username: root
     password: 123
-    url: jdbc:mysql://localhost:3306/springcloud-demo1?serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/springcloud-demo?serverTimezone=UTC
     type: com.alibaba.druid.pool.DruidDataSource
 
     druid:

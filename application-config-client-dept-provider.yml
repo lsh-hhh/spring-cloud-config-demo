@@ -12,7 +12,6 @@ spring:
     username: root
     password: 123
     url: jdbc:mysql://localhost:3306/springcloud-demo1?serverTimezone=UTC
-#    driver-class-name: org.git.mm.mysql.Driver
     type: com.alibaba.druid.pool.DruidDataSource
 
     druid:
@@ -62,14 +61,13 @@ info:
 server:
   port: 8001
 spring:  
-  application: 
   profiles: test  
+  application: 
     name: spring-cloud-config-dept-provider
   datasource:
     username: root
     password: 123
     url: jdbc:mysql://localhost:3306/springcloud-demo2?serverTimezone=UTC
-#    driver-class-name: org.git.mm.mysql.Driver
     type: com.alibaba.druid.pool.DruidDataSource
 
     druid:

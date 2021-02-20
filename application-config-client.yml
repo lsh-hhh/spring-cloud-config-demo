@@ -1,7 +1,8 @@
 spring:
   profiles:
     active: dev
-    
+config:
+  info: application-config-client.yml version=1
 ---
 spring:
   profiles: dev

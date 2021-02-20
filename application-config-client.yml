@@ -2,7 +2,7 @@ spring:
   profiles:
     active: dev
 config:
-  info: application-config-client.yml version=1
+  info: application-config-client.yml version=2
 ---
 spring:
   profiles: dev

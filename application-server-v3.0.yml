@@ -6,9 +6,9 @@ spring:
 spring:
   profiles: dev # 开发环境
   application:
-    name: spring-cloud-demo-config-dev
+    name: my-cloud-demo-config-dev-v3
 ---
 spring:
   profiles: test # 测试环境
   application:
-    name: spring-cloud-demo-config-test
+    name: my-cloud-demo-config-test-v3
